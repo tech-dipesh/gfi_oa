@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: "Inter Variable", Inter, sans-serif;
+  --color-ink: #181818;
+  --color-body: #4d4d4d;
+  --color-muted: #666666;
+  --color-night: #000000;
+  --color-brand: #00856f;
+  --color-brand-strong: #0f7a63;
+  --color-brand-soft: #2f8f7b;
+  --color-wash: #f3f7f6;
+  --color-line: #dfe6e4;
+  --color-warn: #8a5300;
+  --color-bad: #b42318;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-pill: 100px;
+  --shadow-1: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px;
+  --shadow-2: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html { font-size: 16px; }
+  body { background: #ffffff; color: var(--color-body); font-family: var(--font-sans); line-height: 1.55; }
+  button:not(:disabled), [role="button"]:not(:disabled), select, option, input[type="radio"], input[type="checkbox"], input[type="file"], label[for] { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--color-brand-strong); outline-offset: 2px; }
+  .on-dark :focus-visible { outline-color: var(--color-brand-soft); }
+  @media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
 }
