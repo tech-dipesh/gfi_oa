@@ -1,6 +1,6 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/logo_dark.svg"><img alt="Resume Ranker" src="docs/logo_light.svg"></picture>
 
-![Live site](https://img.shields.io/website?url=https%3A%2F%2FYOUR-APP.vercel.app&label=live&up_color=00856f)
+![Live site](https://img.shields.io/website?url=https%3A%2F%2Fgfi-g.vercel.app&label=live&up_color=00856f)
 ![Tests](https://img.shields.io/badge/tests-vitest-00856f)
 It'll Read All the 47 Resume with Make a LCA or UI/Ux With If it's not found it make a uncertain. It Make the Every scores shows the evidance. Upload a new resume and how it lands in the pile.
 
