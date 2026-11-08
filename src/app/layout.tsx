@@ -5,8 +5,8 @@ import "@fontsource-variable/inter"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Resume Ranker | Growth For Impact",
-  description: "Extracts, classifies and ranks resumes for the LCA Consultant and UI/UX Intern roles, with the evidence behind every score.",
+  title: "Ranker",
+  description: "Extract And Give a Ranking",
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-white">
         <header className="on-dark bg-night text-white">
           <nav aria-label="Main" className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-            <Link href="/" className="text-lg font-semibold">Growth For Impact <span className="font-normal text-brand-soft">Resume Ranker</span></Link>
+            <Link href="/" className="text-lg font-semibold">Growth For Impact <span className="font-normal text-brand-soft">Ranker</span></Link>
             <div className="flex gap-5 text-base">
               <Link href="/" className="underline-offset-4 hover:underline">Ranking</Link>
               <Link href="/method" className="underline-offset-4 hover:underline">How it works</Link>
